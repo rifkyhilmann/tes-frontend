@@ -30,7 +30,7 @@ const Page = () => {
             alert("Post berhasil ditambahkan!");
             router.push("/"); // Redirect ke halaman utama
         } catch (error) {
-            alert("Gagal menambahkan post");
+            console.log(error);git 
         }
     };
 

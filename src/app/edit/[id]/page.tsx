@@ -23,8 +23,7 @@ const EditPost = () => {
                 setStatus(data.status);
                 setLoading(false);
             } catch (error) {
-                alert("Gagal mengambil data postingan");
-                router.push("/"); // Redirect jika gagal
+                console.log(error);
             }
         };
 
@@ -50,7 +49,7 @@ const EditPost = () => {
             alert("Post berhasil diperbarui!");
             router.push("/"); // Redirect ke halaman utama
         } catch (error) {
-            alert("Gagal memperbarui post");
+            console.log(error);
         }
     };
 
